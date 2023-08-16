@@ -1,6 +1,7 @@
 import React, { useCallback, useContext, useState } from "react";
 import { globalContext } from "../../shared/provider/GlobalProvider";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const AddForm = () => {
   let [user, setUser] = useState({
@@ -25,13 +26,13 @@ const AddForm = () => {
       (firstName === "" || lastName === "" || email === "" || bio === "",
       imgURL === null)
     ) {
-      alert("fill in the input");
+      toast.error("fill in the inputs");
       return;
     }
 
-    navigate("/");
-    // const newUser={...user,}
     setUsers([...users, user]);
+    toast.success("user added successfully");
+    navigate("/");
   };
   return (
     <div className="container">

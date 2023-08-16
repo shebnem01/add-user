@@ -5,12 +5,12 @@ function GlobalProvider({ children }) {
   const [users, setUsers] = useState([
     {
       id:1,
-      firstName: "Kim",
-      lastName: "Salam",
-      email: "sem",
+      firstName: "Admin",
+      lastName: "Lorem",
+      email: "admin@gmail.com",
       imgURL:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYQVL91YzGDh4zghVN0-Ui_2NA2kmPpRnqFw&usqp=CAU",
-      bio: "ewer",
+      bio: "Game of as rest time eyes with of this it. Add was music merry any truth since going. Happiness she ham but instantly put departure propriety. She amiable all without say spirits shy clothes morning. ",
     },
   ]);
 
